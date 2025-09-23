@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Demo</title>
+        <script>
+            document.addEventListener("DOMContentLoaded",() => {
+            //let heading = document.getElementById("container");
+            //heading.innerHTML = "Title change by JavaScript code";
+            //console.dir(heading);
+
+            //let content = document.getElementsByClassName("Heading");
+            //console.dir(content);
+            //console.log(content);
+
+            //let para = document.getElementsByTagName("Tagging");
+            //console.dir(para);
+            let firstElement = document.querySelector(".Heading");
+            console.dir(firstElement);
+
+            firstElement.style.color = "blue";
+            document.getElementById("myBtn").addEventListener("Click", function(){
+            alert("You've successgully triggered the click event!");
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <div class = "Heading">
+            <h1 id="container">Example of accessing element by ID</h1>
+            <h2 tag ="Tagging">This is the second paragraph</h2>
+
+        </div>  
+        <div class = "Heading">
+            <h1 id="container2">Second</h1>
+        </div>  
+
+    </body>
+</html>
